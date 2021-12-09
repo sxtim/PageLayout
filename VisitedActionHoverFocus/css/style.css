@@ -75,7 +75,6 @@ h1, h2, h3, h4, h5, h6 {
 
 /*--------------------*/
 body {
-    border: 2px dotted;
     width: 1440px;
     height: 1700px;
  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -83,26 +82,79 @@ body {
 }
 .list-static {
     display: inline-block;
-    border: 2px dotted;
     margin: 160px 0 0 290px;
 }
 
 .list-static li {
-    border: 2px dotted;
     background: url("/VisitedActionHoverFocus/img/icon/check_icon_37.png") left no-repeat;
     margin:  0 0 15px 0;
     padding: 0 0 0 35px;
 }
 
-.list-action {
+.list-static li:nth-child(1){
+    text-decoration: line-through;
+}
+
+.list-static li:nth-child(1):hover {
+    text-decoration: none;
+}
+.list-static li:nth-child(2){
+    font-weight: 700;
+}
+.list-static li:nth-child(2):hover {
+    filter: invert(39%) sepia(88%) saturate(368%) hue-rotate(313deg) brightness(100%) contrast(102%);
+}
+.list-static li:nth-child(3){
+    font-style: italic;
+}
+.list-static li:nth-child(3):hover {
+    font-style: normal;
+}
+.list-static li:nth-child(4){
+    text-transform: uppercase;
+}
+.list-static li:nth-child(4){
+    text-transform: uppercase;
+}
+.list-static li:nth-child(4):hover{
+    text-transform: none;
+}
+
+.button {
+    margin: 135px 0 0 315px;
+}
+.info-link {
     display: inline-block;
-    margin: 86px 0 0 290px;
+    border-radius: 24px;
+    height: 44px;
+    line-height: 44px;
+    -webkit-box-shadow: 0px 5px 1px rgba(0,0,0,0.5);
+    box-shadow: 0px 5px 1px rgba(0,0,0,0.5);
+    padding:  0 30px 0 30px;
+    background-color: #80b7b3;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2.8px;
+    color: #ffffff;
+}
+.info-link:hover {
+    background-color: #3a5856;
+}
+.info-link:active {
+    background-color: #818181;
+    -webkit-box-shadow: 0px 2px 1px rgba(0,0,0,0.5);
+}
+.textinput{
+    border: 1px solid #666;
+    height: 50px;
+    font-size: 18px;
+    width: 300px;
+    margin: 100px 0 0 315px;
+}
+.textinput:focus{
+    border: rgba(198, 221, 228, 1);;
+    box-shadow: 0 0 20px rgba(198, 221, 228, 1);
 }
 
 
-.list-action li {
-    border: 2px dotted;
-    background: url("/VisitedActionHoverFocus/img/icon/check_icon_37.png") left no-repeat;
-    margin:  0 0 15px 0;
-    padding: 0 0 0 35px;
-}
